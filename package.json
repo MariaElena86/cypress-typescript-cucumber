@@ -1,0 +1,21 @@
+{
+  "name": "cypress-cucumber-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.4",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.8.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.5.1",
+    "typescript": "^5.4.5"
+  }
+}
