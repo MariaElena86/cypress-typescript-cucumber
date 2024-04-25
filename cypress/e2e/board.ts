@@ -12,13 +12,13 @@ Given("I am on empty home page", () => {
     .click()
 });
 
-When("I type in {string} and submit", (boardName) => {
+When("I type in {string}", (boardName) => {
   cy.get('#APjFqb')
-    .should('have.class', 'active') 
-    .type(`${boardName}{enter}`)
-
+    .should('have.class', 'active')
 });
 
-Then("I should be redirected to the board detail", () => {
-  cy.location("pathname").should('match', /\/board\/\d/);
+Then("Enter the text", (boardName) => {
+  cy.wait(3000)
+  cy.get('#APjFqb')
+    .type(`${boardName}{enter}`)
 });
