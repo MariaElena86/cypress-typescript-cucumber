@@ -81,3 +81,17 @@ When("I type and submit in the board name", () => {
 Then("I should be redirected to the board detail", () => {
   cy.location("pathname").should('match', /\/board\/\d/);
 });
+
+
+# Create a new project with Cypress + TypeScript + Cucumber
+
+Tutorial base: https://filiphric.com/cucumber-in-cypress-a-step-by-step-guide
+
+---
+
+## 1. Inicializar el proyecto
+
+```bash
+npm init -y
+npm install cypress
+npm install typescript --save-dev
