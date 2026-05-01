@@ -1,5 +1,17 @@
-Create a new project with Cypress-Typescript and cucumber
+
+Cypress + TypeScript + Cucumber Setup
 url: https://filiphric.com/cucumber-in-cypress-a-step-by-step-guide
+
+Este proyecto configura un entorno de testing end-to-end utilizando Cypress con TypeScript y Cucumber para escritura de tests en formato BDD.
+
+Se inicializa el proyecto con npm e instala Cypress y TypeScript, configurando el archivo tsconfig.json para soportar tipado y compilación en el entorno de testing. Posteriormente, se integra el preprocesador de Cucumber para permitir la escritura de escenarios en archivos .feature, junto con un bundler basado en esbuild para optimizar la ejecución de los tests.
+
+El proyecto se configura en cypress.config.ts para soportar archivos .feature como especificaciones de testing, incluyendo la integración de plugins necesarios para la compilación y ejecución de step definitions. Además, se define la estructura de los tests utilizando Gherkin, separando los escenarios en archivos .feature y las definiciones de pasos en archivos TypeScript.
+
+Finalmente, se implementa un ejemplo de test E2E que valida funcionalidades básicas como la creación de un board y la navegación a su detalle, utilizando comandos de Cypress y step definitions reutilizables.
+
+
+
 ``` bash
 1-npm init -y
 2-npm install cypress
